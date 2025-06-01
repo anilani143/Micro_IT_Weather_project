@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="anil.css">
+    <title>WEATHER-REPORT</title>
+   
+</head>
+<body>
+    
+ <div class="container" id="container">
+
+    <!-- first division -->
+     <div class="first">
+        <i class="fa-solid fa-location-dot" id="location"></i>
+      
+        <input type="text" id="inputdata" placeholder="Enter a city " autocomplete="off">
+       <button class="btn"> <i class="fa-solid fa-magnifying-glass" id="search" ></i>
+      </button>
+
+     </div>
+
+     <!-- second division -->
+
+     <div class="imgcontainer" id="imgcontainer">
+        <img src="sunny.jpeg" alt="">
+        <p class="tem" id="tem">0<span>  °C</span></p>
+        <p id="description"></p>
+     </div>
+     <!-- third division -->
+      <div class="third" id="third">
+
+        <div class="windimg">
+           
+            <i class="fa-solid fa-water"></i>
+          <div class="matter">
+              <p class="humidity" id="humidity">0<span> %</span><br>
+                <p>Humidity</p>
+            </p>
+          </div>
+        </div>
+        <div class="speedimg">
+             <i class="fa-solid fa-wind"></i>
+           <div class="matter">
+              <p class="speed" id="speed">0<span> Km/h</span></p>
+             <p>Wind speed</p>
+           </div>
+
+        </div>
+
+      </div>
+      <div class="error" id="error">
+        <img src="404.jpg" alt="">
+        <p>Oops Location not found.....!!</p>
+
+      </div>
+ </div>
+
+ <script src="anil.js"></script>
+</body>
+</html>
